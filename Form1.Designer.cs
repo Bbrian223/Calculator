@@ -58,6 +58,8 @@ namespace Calc
             this.txtScreen.Size = new System.Drawing.Size(318, 48);
             this.txtScreen.TabIndex = 37;
             this.txtScreen.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtScreen.WordWrap = false;
+            this.txtScreen.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtScreen_KeyPress);
             // 
             // btnClearAll
             // 
@@ -123,6 +125,7 @@ namespace Calc
             this.btnNum0.TabIndex = 31;
             this.btnNum0.Text = "0";
             this.btnNum0.UseVisualStyleBackColor = true;
+            this.btnNum0.Click += new System.EventHandler(this.btnNum0_Click);
             // 
             // btnMultiplication
             // 
@@ -280,6 +283,7 @@ namespace Calc
             this.Controls.Add(this.btnNum3);
             this.Controls.Add(this.btnNum2);
             this.Controls.Add(this.btnNum1);
+            this.KeyPreview = true;
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);

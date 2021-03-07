@@ -46,10 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class\Div.cs" />
-    <Compile Include="Class\Mult.cs" />
-    <Compile Include="Class\Subs.cs" />
-    <Compile Include="Class\Sum.cs" />
+    <Compile Include="Class\OperData.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
